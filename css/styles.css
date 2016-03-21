@@ -1,0 +1,570 @@
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*end reset*/
+html, body{
+    font-size: 100%;
+	background:	black;
+	font-family: 'Audiowide', cursive;
+	background: url(http://www.socaleventvideos.com/wp-content/uploads/2014/12/black-background.jpg) no-repeat scroll; background-size: 100% 100%;
+}
+p{
+	margin:0;
+	font-family: 'Audiowide', cursive;
+}
+h1,h2,h3,h4,h5,h6,a{
+	font-family: 'Audiowide', cursive;
+	margin:0;
+}
+ul,label{
+	margin:0;
+	padding:0;
+}
+body a:hover{
+	text-decoration:none;
+}
+/*-- banner --*/
+.banner1 {
+    width: 50%;
+    margin: 5em auto;
+}
+.banner{
+	background:url(http://feelgrafix.com/data_images/out/12/858400-music-wallpaper.jpg) no-repeat scroll; background-size: 100% 100%;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+	min-height:400px;
+}
+.banner-right{
+	float: right;
+    width:24.63%;
+    text-align: center;
+}
+.nav ul li{
+	list-style-type: none;
+    border: 1px solid #EFEFEF;
+    margin: .5em 0 0;
+}
+.nav ul li a{
+	padding: .8em 0;
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+	background: rgba(0, 0, 0, 0.29);
+}
+.logo {
+    margin:10em 0 0 5em;
+}
+/*-- Menu 1 --*/
+.menu_1,.menu_2,.share,.hd-movies{
+    border: 1px solid #EFEFEF;
+    float: left;
+    width:23.99%;
+    padding: .8em 0 !important;
+    background: rgba(0, 0, 0, 0.29);
+}
+.menu_2,.share,.hd-movies{
+	margin:0 0 0 .5em !important;
+}
+.menu_1_left,.menu_2_left{
+	float: left;
+    width: 60px;
+    height: 24px;
+    background: url(../images/menu.png)no-repeat 39px 0px;
+    cursor: pointer;
+    display: block;
+}
+.menu_1_left_nav,.menu_2_left_nav{
+	display: none;
+	padding:0;
+	text-align:center;
+	width:100%;
+}
+.menu_1_left_nav li.last_menu, .menu_2_left_nav li.last_menu, .menu_2_left_nav li.last_menu{
+	border-bottom: none;
+}
+.menu_1_left_nav li,.menu_2_left_nav li{
+	display: block;
+    border-bottom:1px solid #EFEFEF;
+    list-style-type: none;
+}
+.menu_1_left_nav li a,.menu_2_left_nav li a{
+	display:block;
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+    padding: 1em 0;
+    font-weight: 500;
+    text-decoration: none;
+ }
+.menu_1 h2,.menu_2 h2{
+	width: 61%;
+	float: left;
+	font-size:1em;
+	text-align: center;
+	color: #fff;
+	margin: .2em 0 0;
+}
+.menu_1,.menu_2 {
+    padding: .71em 0 !important;
+}
+/*-- Menu 1 --*/
+.share a,.hd-movies a{
+	font-size:1em;
+    text-align: center;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+.banner-bottom{
+	margin:.5em 0 0;
+}	
+ul.menu_1_left_nav li:nth-child(1) a,ul.menu_2_left_nav li:nth-child(1) a {
+    padding: 2em 0 1em;
+}
+/*-- //banner --*/
+/*-----start-responsive-design------*/
+@media (max-width:1440px){
+	.menu_1, .menu_2, .share, .hd-movies {
+		width:23.98%;
+	}
+	.menu_1_left, .menu_2_left {
+		width: 60px;
+		background: url(../images/menu.png)no-repeat 38px 0px;
+	}
+	.banner1 {
+		width: 55%;
+	}
+}
+@media (max-width: 1366px){
+	.menu_1_left_nav li a, .menu_2_left_nav li a {
+		font-size: 14px;
+	}
+	.menu_1_left, .menu_2_left {
+		width: 40px;
+		background: url(../images/menu.png)no-repeat 17px 0px;
+	}
+	.banner1 {
+		width: 60%;
+	}
+	.menu_1, .menu_2, .share, .hd-movies {
+		width: 24%;
+	}
+}
+@media (max-width: 1280px){
+	.menu_1, .menu_2, .share, .hd-movies {
+		width: 24.13%;
+	}
+	.copyright p {
+		font-size: 13px;
+	}
+	.banner1 {
+		width: 73%;
+	}
+}
+@media (max-width: 1024px){
+	.banner1 {
+		width: 86%;
+		margin: 3em auto;
+	}
+	.nav ul li a,.share a, .hd-movies a {
+		font-size: 1em;
+	}
+	.menu_1 h2, .menu_2 h2 {
+		font-size: 1em;
+		margin: .3em 0 0;
+	}
+	.menu_1, .menu_2, .share, .hd-movies {
+		width: 24.09%;
+	}
+	.banner-right {
+		width: 24.23%;
+	}
+	.copyright {
+		padding: 2em 0.9em;
+	}
+	.menu_1,.menu_2 {
+		padding:.66em 0 !important;
+	}
+}
+@media (max-width:768px){
+	.menu_1_left, .menu_2_left {
+		width: 30px;
+		background: url(../images/menu.png)no-repeat 7px 0px;
+	}
+	.menu_1 h2, .menu_2 h2 {
+		font-size: .9em;
+		width: 80%;
+	}
+	.nav ul li a, .share a, .hd-movies a {
+		font-size: .9em;
+	}
+	.menu_1, .menu_2, .share, .hd-movies {
+		width:23.77%;
+	}
+	.menu_1, .menu_2 {
+		padding:.62em 0 !important;
+	}
+	.banner {
+		min-height: 370px;
+	}
+	.next-top li i {
+		left: 30%;
+	}
+	.next-top li i.next {
+		left: 74%;
+	}
+	.menu_1_left_nav li a, .menu_2_left_nav li a {
+		font-size: 13px;
+	}
+}
+@media (max-width: 736px){
+	.menu_1_left, .menu_2_left {
+		width: 20px;
+		background: url(../images/menu.png)no-repeat 7px 0px;
+		background-size: 90%;
+	}
+	.menu_1, .menu_2, .share, .hd-movies {
+		width:23.57%;
+	}
+}
+@media (max-width: 667px){
+	
+}
+@media (max-width: 640px){
+	.next-top li i {
+		background: url(../images/pn.png)no-repeat -1px -9px;
+		background-size: 315%;
+		width: 45px;
+		height: 28px;
+	}
+	.next-top li i.next {
+		background-position: -61px -9px;
+		left:74%;
+	}
+	.menu_1, .menu_2, .share, .hd-movies {
+		width: 23.54%;
+	}
+}
+@media (max-width: 600px){
+	.menu_1, .menu_2, .share, .hd-movies {
+		width: 23.38%;
+	}
+}
+@media (max-width:568px){
+	.menu_1, .menu_2, .share, .hd-movies {
+		width: 23.3%;
+	}
+	.menu_1 h2, .menu_2 h2 {
+		font-size: .8em;
+		margin: 0;
+	}
+	.menu_1_left, .menu_2_left {
+		width: 16px;
+		background: url(../images/menu.png)no-repeat 7px 0px;
+		background-size: 79%;
+	}
+	.nav ul li a, .share a, .hd-movies a {
+		font-size: .8em;
+	}
+}
+@media (max-width:480px){
+	.next-top li i {
+		left: 7%;
+	}
+	.next-top li i.next {
+		left: 55%;
+	}
+	.banner1 {
+		width: 95%;
+		margin: 1em auto;
+	}
+	.menu_1, .menu_2, .share, .hd-movies {
+		width: 48.66%;
+	}
+	.share {
+		margin: .5em 0 0 0 !important;
+	}
+	.hd-movies {
+		margin: .5em 0 0 .5em !important;
+	}
+	.logo {
+		margin: 10em 0 0 1em;
+	}
+	.lucky {
+		width: 50%;
+	}
+	.banner-right {
+		width: 49%;
+	}
+	.copyright p {
+		font-size: 12px;
+	}
+}
+@media (max-width:414px){
+	.menu_1_left, .menu_2_left {
+		width: 21px;
+		background: url(../images/menu.png)no-repeat 7px 0px;
+		background-size: 79%;
+	}
+	.menu_1, .menu_2, .share, .hd-movies {
+		width: 48.46%;
+	}
+	.logo {
+		margin: 10em 0 0 0.5em;
+	}
+}
+@media (max-width:384px){
+	.next-top li i.next {
+		left: 65%;
+	}
+	.menu_1, .menu_2, .share, .hd-movies {
+		width: 48.25%;
+	}
+	ul.menu_1_left_nav li:nth-child(1) a, ul.menu_2_left_nav li:nth-child(1) a {
+		padding: 1em 0 1em;
+	}
+}
+@media (max-width:320px){
+	.lucky {
+		width: 100%;
+		float: none;
+	}
+	div.audio-player {
+		padding: 0;
+	}
+	.next-top li i {
+		left: 15%;
+		top:-18px;
+	}
+	.logo {
+		margin: 2em 0;
+		text-align: center;
+	}
+	.banner-right {
+		width: 70%;
+		float: none;
+		margin: 0 auto;
+	}
+	.menu_1, .menu_2, .share, .hd-movies {
+		width: 70%;
+		float: none;
+		margin: 0 auto;
+	}
+	.menu_2, .share, .hd-movies {
+		margin: .5em auto !important;
+	}
+	.hd-movies {
+		margin: .5em auto 0 !important;
+	}
+	.copyright {
+		padding: 1.5em 0.9em;
+	}	
+	.copyright p {
+		line-height: 1.8em;
+	}
+	.banner {
+		background: url(../images/banner.jpg) no-repeat -335px 0px;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		-ms-background-size: cover;
+	}
+}
+/* HTML5 Audio player with playlist styles */
+.example {
+    margin: 50px auto 0;
+    width: 400px;
+}
+.player {
+    background: transparent url("#") no-repeat scroll center top;
+    height: 162px;
+    position: relative;
+    width: 326px;
+    z-index: 2;
+}
+.title, .artist {
+    font-family: verdana;
+    left: 167px;
+    position: absolute;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.title {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    top: 23px;
+}
+.artist {
+    color: #EEEEEE;
+    font-size: 12px;
+    top: 40px;
+}
+.pl {
+    background: transparent url("../images/spr.png") no-repeat scroll -274px -175px;
+    cursor: pointer;
+    height: 34px;
+    left: 270px;
+    position: absolute;
+    top: 20px;
+    width: 32px;
+}
+.pl:hover {
+    top: 21px;
+}
+.cover {
+    background: transparent url(../data/cover1.jpg) no-repeat scroll center top;
+    border-radius: 5px 5px 5px 5px;
+    height: 94px;
+    left: 20px;
+    position: absolute;
+    top: 20px;
+    width: 94px;
+}
+.controls {
+    cursor: pointer;
+    height: 23px;
+    left: 167px;
+    position: absolute;
+    top: 65px;
+    width: 138px;
+}
+.controls .play, .controls .pause, .controls .rew, .controls .fwd {
+    background: transparent url("../images/spr.png") no-repeat scroll 0 0;
+    float: left;
+    height: 100%;
+    width: 33%;
+}
+.controls .play {
+    background-position: -8px -171px;
+}
+.controls .pause {
+    background-position: -8px -198px;
+    display: none;
+}
+.controls .rew {
+    background-position: -54px -171px;
+}
+.controls .fwd {
+    background-position: -100px -171px;
+}
+.controls .play:hover {
+    background-position: -8px -170px;
+}
+.controls .pause:hover {
+    background-position: -8px -197px;
+}
+.controls .rew:hover {
+    background-position: -54px -170px;
+}
+.controls .fwd:hover {
+    background-position: -100px -170px;
+}
+.hidden {
+    display: none;
+}
+.controls .visible {
+    display: block;
+}
+.volume {
+    height: 11px;
+    left: 186px;
+    position: absolute;
+    top: 96px;
+    width: 112px;
+}
+.tracker {
+    height: 15px;
+    left: 20px;
+    position: absolute;
+    top: 126px;
+    width: 285px;
+}
+.ui-slider-range {
+    background: transparent url("../images/spr.png") no-repeat scroll 5px -222px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.ui-slider-handle {
+    cursor: pointer;
+    height: 10px;
+    margin-left: -5px;
+    position: absolute;
+    top: 2px;
+    width: 10px;
+    z-index: 2;
+}
+.volume .ui-slider-handle {
+    background: url("../images/spr.png") no-repeat scroll -201px -188px rgba(0, 0, 0, 0);
+    height: 13px;
+    width: 13px;
+}
+.playlist {
+    background-color: #333333;
+    border-radius: 5px 5px 5px 5px;
+    list-style-type: none;
+    margin: -10px 0 0 2px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    position: relative;
+    width: 326px;
+    z-index: 1;
+}
+.playlist li {
+    color: #EEEEEE;
+    cursor: pointer;
+    margin: 0 0 5px 15px;
+}
+.playlist li.active {
+    font-weight: bold;
+}
+.copyright{
+	padding: 2em;
+    text-align: center;
+    background: #1A222F;
+}
+.copyright p{
+	font-size:14px;
+	color:#fff;
+	margin:0;
+	text-align: right;
+}
+.copyright p a{
+	color:#f6e30f;
+}
+.copyright p a:hover{
+	text-decoration:underline;
+}
+.copyright {
+	padding: 1.5em 0.9em;
+}	
+.copyright p {
+	line-height: 1.8em;
+}
