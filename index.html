@@ -1,60 +1,26 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>./RomireverendCyber4RT</title>
-<!-- for-mobile-apps -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //for-mobile-apps -->
-<!-- js -->
-<script src="js/jquery-1.11.1.min.js"></script>
-<!-- //js -->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href='//fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8" />
+    <meta name="author" content="./RomireverendCyber4RT" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="shortcut icon" href="images/logo.png" />
+    <title>./RomireverendCyber4RT</title>
+    
+    <!-- add styles and scripts -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-
 <!-- banner -->
 	<div class="banner1">
-    <center><h1>Welcome to Web Personal</h1></center>
+      <h3><div class="header" align="center">
+        <marquee onmouseover="this.stop()" onmouseout="this.start()" behavior="scroll" direction="left" bgcolor="red">Welcome to my ./Demo Personal WebCode -=+{PAPSI-ITS Malam}+=-</marquee>
+      </div></h3>
 	  <div class="banner">
-			<div class="lucky">
-				<div class="audio-player">
-					<audio id="audio-player"  controls="controls">
-                    <source src="media/1.mp3" type="audio/mpeg">
-					<source src="media/2.mp3" type="audio/mpeg">
-                    <source src="media/3.mp3" type="audio/mpeg"></source></audio>
-				</div>
-					<!---->
-						<script type="text/javascript">
-							$(function(){
-							  $('#audio-player').mediaelementplayer({
-								alwaysShowControls: true,
-								features: ['playpause','progress'],
-								audioVolume: 'horizontal',
-								iPadUseNativeControls: true,
-								iPhoneUseNativeControls: true,
-								AndroidUseNativeControls: true
-							  });
-							});
-						</script>
-					<!--//-->
-					<ul class="next-top">
-						<li><a href="#"><i> </i></a></li>
-						<li><a href="#"><i class="next"> </i></a></li>
-					</ul>	
-				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" alt=" " /></a>
-				</div>
-			</div>
-			<!----start audio ------->
-				<link rel="stylesheet" type="text/css" media="all" href="css/audio.css">
-				<script type="text/javascript" src="js/mediaelement-and-player.min.js"></script>
-			<!----//End audio ------>
-			<div class="banner-right">
+      			<div class="banner-right">
 				<div class="nav">
 					<ul>
 						<li><a href="profile.html">Profile</a></li>
@@ -64,17 +30,36 @@
 					</ul>
 				</div>
 			</div>
-			<div class="clear"> </div>
-			<div class="banner-bottom">
-				
-				<div class="clear"></div>
-			</div>
-		</div>
-    						 
+    <div class="autoplay">
+
+        <div class="player">
+            <div class="pl"></div>
+            <div class="title"></div>
+            <div class="artist"></div>
+            <div class="cover"></div>
+            <div class="controls">
+                <div class="play"></div>
+                <div class="pause"></div>
+                <div class="rew"></div>
+                <div class="fwd"></div>
+            </div>
+            <div class="volume"></div>
+            <div class="tracker"></div>
+        </div>
+        <ul class="playlist hidden">
+            <li audiourl="data/01.mp3" cover="images/logo.png" artist="">Cyber</li>
+            <li audiourl="data/02.mp3" cover="data/cover2.jpg" artist="Artist 2">02.mp3</li>
+            <li audiourl="data/03.mp3" cover="data/cover3.jpg" artist="Artist 3">03.mp3</li>
+            <li audiourl="data/04.mp3" cover="data/cover4.jpg" artist="Artist 4">04.mp3</li>
+            <li audiourl="data/05.mp3" cover="data/cover5.jpg" artist="Artist 5">05.mp3</li>
+            <li audiourl="data/06.mp3" cover="data/cover6.jpg" artist="Artist 6">06.mp3</li>
+            <li audiourl="data/07.mp3" cover="data/cover7.jpg" artist="Artist 7">07.mp3</li>
+        </ul>
+    </div>
+   </div>	    						 
 	  <div class="copyright"><p>@ 2016 | <a href="http://rev4rt.id">./RomireverendCyber4RT</a></p>
 		</div>
 	</div>
 <!-- //banner -->
 </body>
 </html>
-
